@@ -1,0 +1,287 @@
+/* Reset and base */
+body {
+  margin: 0;
+  background-color: #f9f9f9; /* 30% light gray */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Header and nav */
+header {
+  background-color: #2a7f62; /* 60% deep green */
+  padding: 10px 20px;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex: 1;
+}
+ul.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+ul.nav-links li a:hover {
+  text-decoration: underline;
+}
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.search-container form {
+  display: flex;
+}
+.search-container input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.search-container button {
+  background-color: #f4a261; /* 10% warm orange accent */
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('HOMEPAGEPIC.jpg') no-repeat center center / cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h1, h2 {
+  color: #2a7f62; /* 60% deep green */
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/*SEPARATE SEPARATE*/
+
+/* MAIN FORM CONTAINER */
+.donation-form {
+  background-color: #f9f9f9;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* HEADINGS */
+.donation-form h2 {
+  color: #2a7f62;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.personal-info h3,
+.payment-section h3,
+.qr-section h3 {
+  color: #2a7f62;
+  margin-bottom: 10px;
+}
+
+/* CENTERING THE INPUTS */
+.personal-info,
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* INPUT FIELDS */
+.donation-form input {
+  width: 80%;
+  max-width: 350px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+/* ✅ FOCUS EFFECT INSIDE THE BOX */
+.donation-form input:focus {
+  outline: none;
+  background-color: #e6f8ec; /* light green inside */
+  border-color: #2a7f62;     /* green border */
+  color: #2a7f62;            /* green text */
+  transform: scale(1.02);    /* small transform */
+}
+
+/* BUTTON */
+.donation-form button {
+  width: 80%;
+  max-width: 350px;
+  padding: 12px;
+  background-color: #2a7f62;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ CUTE TILT ON HOVER */
+.donation-form button:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
+/* QR SECTION */
+.qr-section img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  border: 2px solid #2a7f62;
+  border-radius: 8px;
+}
+
+/* ROW OF SMALL QR IMAGES */
+.qr-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.qr-row img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #2a7f62;
+  border-radius: 8px;
+}
+
+/* THANK YOU TEXT */
+.thank-you {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #2a7f62;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #2a7f62; /* 60% deep green */
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+footer .footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-container div,
+footer .footer-container a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+footer .footer-container a:hover {
+  text-decoration: underline;
+}
+footer .footer-container img {
+  width: 18px;
+  height: 18px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("icons-sprite.png");
+  background-size: 120px 40px; /* total width of sprite */
+  margin-left: 10px;
+}
+
+/* Facebook icon (first image in sprite) */
+.icon.fb {
+  background-position: 0 0;
+}
+
+/* Email icon (second image in sprite) */
+.icon.email {
+  background-position: -40px 0;
+}
+
+/* Phone icon (third image in sprite) */
+.icon.phone {
+  background-position: -80px 0;
+}
