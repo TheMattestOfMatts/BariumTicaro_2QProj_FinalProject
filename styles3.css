@@ -235,6 +235,7 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
 footer .footer-container {
   max-width: 900px;
   margin: 0 auto;
@@ -245,6 +246,7 @@ footer .footer-container {
   align-items: center;
   gap: 10px;
 }
+
 footer .footer-container div,
 footer .footer-container a {
   color: white;
@@ -254,14 +256,17 @@ footer .footer-container a {
   gap: 6px;
   font-weight: 500;
 }
+
 footer .footer-container a:hover {
   text-decoration: underline;
 }
+
 footer .footer-container img {
   width: 18px;
   height: 18px;
 }
 
+/* ✅ YOUR SPRITE CSS — EXACTLY AS YOU WROTE IT */
 .icon {
   width: 40px;
   height: 40px;
@@ -273,15 +278,21 @@ footer .footer-container img {
 
 /* Facebook icon (first image in sprite) */
 .icon.fb {
-  background-position: 0 0;
+  background: url('icons-sprite.png') no-repeat -424px -211px;
+  width: 42px;
+  height: 43px;
 }
 
 /* Email icon (second image in sprite) */
 .icon.email {
-  background-position: -40px 0;
+  background: url('icons-sprite.png') no-repeat -287px -117px;
+  width: 44px;
+  height: 47px;
 }
 
 /* Phone icon (third image in sprite) */
 .icon.phone {
-  background-position: -80px 0;
+  background: url('icons-sprite.png') no-repeat -240px -210px;
+  width: 48px;
+  height: 47px;
 }
